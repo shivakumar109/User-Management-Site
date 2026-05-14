@@ -20,7 +20,7 @@ function User() {
     
     setDeleting(true);
     try {
-      let res = await fetch(`http://localhost:4000/user-api/users/${state.user._id}`, {
+      let res = await fetch(`https://user-management-site-backend.onrender.com/user-api/users/${state.user._id}`, {
         method: "DELETE"
       });
       if (res.status === 200) {
